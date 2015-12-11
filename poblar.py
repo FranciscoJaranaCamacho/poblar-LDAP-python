@@ -24,21 +24,21 @@ uri.simple_bind_s("cn=admin,dc=fran,dc=gonzalonazareno,dc=org",contras)
 
 #Insertar datos de los usuarios
 for a in datos["humanos"]:
-uid = uid + 1 #Incrementamos el UID (empezará por el 2001)
-dn="cn=Alumno"+str(contador)+",dc=fran,dc=gonzalonazareno,dc=org"
-	attrs = {}
-	attrs['objectclass'] = ['top','posixAccount','inetOrgPerson','ldapPublicKey']
-	attrs['cn'] = str(a["nombre"])+" "+str(a["apellidos"])
-	attrs['uid'] = str(uid)
-	attrs['sn'] = str(a["apellidos"])
-	attrs['uidNumber'] = str(uid)
-	attrs['gidNUmber'] = gid
-	attrs['mail'] = str(a["correo"])
-	attrs['userPassword'] = str(a["usuario"])
-	attrs['sshPublicKey'] = str(a["clave"])
-	attrs['homeDirectory'] = ["/home/"+str(a["nombre"])]
-	ldif = modlist.addModlist(attrs)
-	uri.add_s(dn,ldif)
+	uid = uid + 1 #Incrementamos el UID (empezará por el 2001)
+	dn="cn=Alumno"+str(contador)+",dc=fran,dc=gonzalonazareno,dc=org"
+		attrs = {}
+		attrs['objectclass'] = ['top','posixAccount','inetOrgPerson','ldapPublicKey']
+		attrs['cn'] = str(a["nombre"])+" "+str(a["apellidos"])
+		attrs['uid'] = str(uid)
+		attrs['sn'] = str(a["apellidos"])
+		attrs['uidNumber'] = str(uid)
+		attrs['gidNUmber'] = gid
+		attrs['mail'] = str(a["correo"])
+		attrs['userPassword'] = str(a["usuario"])
+		attrs['sshPublicKey'] = str(a["clave"])
+		attrs['homeDirectory'] = ["/home/"+str(a["nombre"])]
+		ldif = modlist.addModlist(attrs)
+		uri.add_s(dn,ldif)
 	contador = contador + 1
 #Cerramos la conexión
 uri.unbind_s()
