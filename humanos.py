@@ -1,0 +1,19 @@
+{
+    "humanos" : [
+
+        {
+            "nombre" : "usuario1",
+            "apellidos" : "asdfg",
+            "correo" : "correo@ejemplo.com",
+            "usuario" : "usuario1.asdfg",
+            "clave" : "ssh-rsa AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA correo@ejemplo.com" 
+        },
+       {
+          "nombre" : "usuario2",
+            "apellidos" : "hjkl",
+            "correo" : "correo2@ejemplo.com",
+            "usuario" : "usuario2.hjkl",
+            "clave" : "ssh-rsa AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA correo2@ejemplo.com" 
+        }
+    ]
+}
