@@ -37,6 +37,7 @@ for a in datos["humanos"]:
 		attrs['userPassword'] = str(a["usuario"])
 		attrs['sshPublicKey'] = str(a["clave"])
 		attrs['homeDirectory'] = ["/home/"+str(a["nombre"])]
+		attrs['loginShell'] = "/bin/bash"
 		ldif = modlist.addModlist(attrs)
 		uri.add_s(dn,ldif)
 	contador = contador + 1
